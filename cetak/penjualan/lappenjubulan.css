@@ -1,0 +1,65 @@
+
+.table tr:nth-child(1){
+    font-size: 20px;
+    
+}
+
+.table tr td{
+    width: 130.56px;
+}
+
+.table{
+    border-collapse: collapse;
+}
+.table{
+    padding: 8px 8px;
+}
+th, td{
+    border: 1px solid black;
+    padding: 8px 8px;
+}
+.tr{
+    font-family:cursive;
+}
+
+.print{
+    width: 70px;
+    height: 40px;
+    border-radius: 7px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    background-color: rgba(134, 124, 124, 0.842);
+    border: 1px inset grey;
+    transition: .8s;
+    cursor: pointer;
+}
+.excel{
+    width: 70px;
+    height: 40px;
+    border-radius: 7px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    background-color: rgba(142, 190, 79, 0.842);
+    border: 1px inset rgb(117, 214, 79);
+    transition: .8s;
+    cursor: pointer;
+}
+.print:hover, .excel:hover{
+    opacity: .7;
+    box-shadow: 0px 3px 5px rgba(151, 146, 146, 0.781);
+}
+
+@media print{
+    button{
+        display: none;
+    }
+    a{
+        display: none;
+    }
+    .container{
+        visibility: visible;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}

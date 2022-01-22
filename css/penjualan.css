@@ -1,0 +1,236 @@
+.dasar{
+    width: 80%;
+    min-height: 610px;
+    max-height: 1200px;
+    background-color: rgba(255, 255, 255, 0.884);
+    margin: auto;
+    margin-top: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    height: 61px;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+}
+.isi{
+    padding: 5px;
+    width: 99%;
+    height: 506.3px;
+    max-height: 1083px;
+    
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.pagi, .siang{
+    box-shadow: 0px 2px 5px  rgba(131, 122, 122, 0.849);
+    
+    width: 100%;
+    height: 476px;
+    display: flex;
+    justify-content: space-between;
+}
+.pagiatas, .siangatas{
+    width: 15%;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 476px;
+    padding: 5px;
+    line-height:5px;
+    box-sizing: border-box;
+}
+.pagibawah, .siangbawah{
+    display: flex;
+    justify-content: space-evenly;
+    width: 85%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    height: 476px;
+    padding: 5px;
+}
+.isi1, .isi2, .isi3, .isi4{
+    width: 24%;
+    height: 45%;
+    text-align: center;
+}
+.headerpenju{
+    width: 68%;
+    line-height: 10px;
+}
+.tgl{
+    
+    width: 32%;
+}
+.fm_tgl, #fm_thn, #fm_bln{
+    height: 26px;
+    box-shadow: 0px 2px 5px  rgba(131, 122, 122, 0.849);
+    background-color: rgb(223, 138, 68);
+    border-color: coral;
+}
+.tombol{
+    height: 24px;
+    background-color: rgb(134, 197, 70);
+    border-color:  rgb(134, 197, 70);
+    transition: .7s;
+}
+.tombol:hover{
+    opacity: .8;
+    box-shadow: -5px 0px 3px  rgba(131, 122, 122, 0.849);
+    margin-left: 5px;
+}
+.table{
+    height: 47px;
+}
+.isi table img{
+    width: 175px;
+}
+.isi table{
+    width:100% ;
+    height :100%; 
+    box-shadow: 0px 0px 2px  rgba(131, 122, 122, 0.849);
+}
+.inputt{
+    width: 100%;
+    height: 54.9px;
+    text-align: right;
+}
+button{
+    width: 80px;
+    height: 80%;
+    background-color: rgb(102, 228, 53);
+    margin-right: 30px;
+    margin-top: 2px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: rgb(102, 228, 53);
+    font-size: 15px;
+    transition: .5s;
+}
+.button{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(102, 228, 53);
+    margin-left: 20px;
+    margin-top: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: rgb(102, 228, 53);
+    font-size: 15px;
+    transition: .5s;
+
+}
+#cetak:hover, #input:hover, .button:hover{
+    margin-top: -4px ;
+    box-shadow: 0px 10px 3px -5px  rgba(131, 122, 122, 0.849);
+    color:rgba(131, 122, 122, 0.849);
+}
+.inputan{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, .8);
+    z-index: 9999;
+    overflow: hidden;
+    height: 0;
+    width: 0;
+}
+.inputan:target{
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    
+}
+.form{
+  width: 500px;
+  height: auto;
+  margin: auto;
+  position: relative;
+  top: 50px;   
+}
+.forminput{
+    width: 40%;
+    height: 75%;
+    background-color: rgba(124, 237, 245, 0.808);
+    border: 2px solid rgb(105, 128, 192);
+    border-radius: 9px;
+    position: relative;
+    top: 60px;
+    margin: auto;
+}
+.inputan:target .forminput{
+    animation: zoom 1s;
+}
+
+.close{
+    position: absolute;
+    top: 40px;
+    left: 47%;
+    background-color: rgba(248, 31, 85, 0.822);
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    box-shadow: 2px 2px 7px  rgba(0, 0, 0,.8);
+    color: blanchedalmond;
+}
+a{
+    text-decoration: none;
+}
+.inputan:target .close{
+    animation: close .5s .5s forwards;
+}
+@keyframes close{
+    0%{
+        opacity: 0;
+        margin-top: -20px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.Input{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(124, 237, 245, 0.808);
+    border: 2px solid rgb(105, 128, 192);
+    text-align: center;
+    color: rgb(36, 42, 138);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Input:hover{
+    box-shadow: 0px 5px 10px #669999;
+	transition-duration: 1s; 
+}
+.tengah{
+    margin: auto;
+    font-weight: bold;
+    color: rgb(36, 42, 138);
+}
